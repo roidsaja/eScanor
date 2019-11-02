@@ -13,10 +13,12 @@ It is designed to be as simple and minimal with minimum hassle for interaction, 
 * tts.sh -- Tests the speaker for tts and adjust different voices.
 * test.sh -- Tests each component including camera.
 
-
 ## init
 1. `sudo apt-get update`
 2. `sudo apt-get install -y build-essential python-pip python-dev`
 3. `sudo apt-get install -y tesseract-ocr flite`
 #### optional
 4. `crontab ./cronfile`
+
+## testing the camera
+[head to raspberrypi.org documentation site](https://www.raspberrypi.org/documentation/configuration/camera.md)
