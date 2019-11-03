@@ -29,11 +29,3 @@ cat test.txt
 
 # SPEAK TEXT
 flite -voice slt -f test.txt
-
-# Run a web server to view photo
-#IP=`hostname -I`
-#IP=${IP%?}
-#echo "To see photo, browse to http://$IP:8080/test.jpg"
-#echo "Press Ctrl-C to exit"
-#python -m SimpleHTTPServer 8080
-
