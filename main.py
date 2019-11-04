@@ -23,16 +23,20 @@ BTN1    = 24    # The button!
 ### FUNCTIONS
 # Thread controls for background processing
 class RaspberryThread(threading.Thread):
+       # Takes in a threading obj and defines which func to execute
     def __init__(self, function):
         self.running = False
         self.function = function
         super(RaspberryThread, self).__init__()
 
     def start(self):
+        # Start the thread execution
         self.running = True
         super(RaspberryThread, self).start()
 
     def run(self):
+        # The run() method will run in the background
+        # until the application exits.
         while self.running:
             self.function()
 
@@ -148,21 +152,20 @@ try:
     GPIO.setup(BTN1, GPIO.IN, pull_up_down=GPIO.PUD_UP) 
     
     # Threaded audio player
-    #rt = RaspberryThread( function = repeatTTS ) # Repeat Speak text
     rt = RaspberryThread( function = stopTTS ) # Stop Speaking text
     
     volume(VOLUME)
-    speak("OK, ready")
+    speak("OK, ready for scanning...")
     
     while True:
         if GPIO.input(BTN1) == GPIO.LOW:
-            # Btn 1
+            # Btn 1 pressed
             getData()
             rt.stop()
             rt = RaspberryThread( function = stopTTS ) # Stop Speaking text
-            time.sleep(0.5)  
-            speak("OK, ready")
-        time.sleep(0.2)  
+            time.sleep(0.5)
+            speak("OK, ready for scanning...")
+        time.sleep(0.2)
     
 except KeyboardInterrupt:
     logger.info("exiting")
