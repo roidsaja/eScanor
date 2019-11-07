@@ -1,7 +1,8 @@
 # eScanor
+## electronic scan ocr
 
 ## overview
-University final project for the curriculum subject named 'Interfacing 1'. Introducing briefly, eScanor is allowing an impaired vision individual to scan and read text from an A4 paper. It takes a snapshot of the image, converts to a txt file using OCR (Optical Character Recognition) and then speaks that converted text using TTS (Text-To-Speech).
+University final project for the curriculum subject named 'Interfacing 1'. Introducing briefly, eScanor allows an impaired vision individual to scan and read text from an A4 paper. It takes a snapshot of the image, converts to a txt file using OCR (Optical Character Recognition) and then speaks that converted text using TTS (Text-To-Speech).
 It is designed to be as simple and minimal with minimum hassle for interaction, just a single push of a button will automatically trigger the procedure of scanning,convert and speak.
 
 ## limitations
