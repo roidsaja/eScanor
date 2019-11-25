@@ -1,5 +1,4 @@
-#!/bin/bash
-# TEST RASPI 
+#!/bin/bash TEST RASPI
 
 
 # CLEANUP
@@ -7,7 +6,7 @@ rm -f test.jpg test.txt
 
 
 # ADJUST AUDIO VOLUME
-VOLUME=90%
+VOLUME=100%
 echo "Setting volume to $VOLUME"
 sudo amixer -q sset PCM,0 ${VOLUME}
 

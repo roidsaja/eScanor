@@ -11,7 +11,7 @@ import time
 ##### USER VARIABLES
 DEBUG   = 0 # Debug 0/1 off/on (writes to debug.log)
 SPEED   = 1.0   # Speech speed, 0.5 - 2.0 
-VOLUME  = 90    # Audio volume
+VOLUME  = 100    # Audio volume
 
 # OTHER SETTINGS
 SOUNDS  = "/home/pi/eScanor/sounds/" # Directory for sound effect(s)
